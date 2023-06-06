@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Characters View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CharactersViewController" customModule="RickAndMortyMVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="rick-in-rick-and-morty-xs-2932x2932" translatesAutoresizingMaskIntoConstraints="NO" id="SdT-Rj-obW">
+                                <rect key="frame" x="0.0" y="442.33333333333326" width="393" height="409.66666666666674"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.17254901960784313" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rick-And-Morty-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-EF-QEd">
+                                <rect key="frame" x="28" y="74" width="337" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="QI1-n2-vk9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Vbc-R8-DUK">
+                                <rect key="frame" x="46" y="329" width="301" height="73.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your ID, or something, I don't care" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ib-oy-CZj">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="20.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.333333333333332" id="MXS-p9-RzE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Here, dummy" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-AC-FOQ">
+                                        <rect key="frame" x="0.0" y="39.333333333333314" width="301" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Ead-HV-1vd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.15294116739999999" green="0.1725490093" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SdT-Rj-obW" secondAttribute="bottom" id="AjY-uJ-69e"/>
+                            <constraint firstItem="SdT-Rj-obW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="HzL-61-SKx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E9w-EF-QEd" secondAttribute="trailing" constant="28" id="LDi-Tm-NRS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vbc-R8-DUK" secondAttribute="trailing" constant="46" id="NJc-Sx-wjt"/>
+                            <constraint firstItem="E9w-EF-QEd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="Sc5-5t-BfA"/>
+                            <constraint firstItem="Vbc-R8-DUK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="46" id="ScD-WT-BYg"/>
+                            <constraint firstItem="SdT-Rj-obW" firstAttribute="top" secondItem="Vbc-R8-DUK" secondAttribute="bottom" constant="40" id="bBT-Tj-7US"/>
+                            <constraint firstItem="SdT-Rj-obW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="e9G-HD-Wn9"/>
+                            <constraint firstItem="Vbc-R8-DUK" firstAttribute="top" secondItem="E9w-EF-QEd" secondAttribute="bottom" constant="55" id="g0N-zl-Thh"/>
+                            <constraint firstItem="E9w-EF-QEd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="jbU-Et-9CO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="idTextField" destination="0qs-AC-FOQ" id="oye-k4-xb2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.664122137404579" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rick-And-Morty-Logo" width="3840" height="2160"/>
+        <image name="rick-in-rick-and-morty-xs-2932x2932" width="2932" height="2932"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

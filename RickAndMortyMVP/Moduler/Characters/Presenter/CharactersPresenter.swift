@@ -17,6 +17,8 @@ class CharactersPresenter: CharactersPresenterProtocol{
     init(view: CharactersViewProtocol, router: CharactersRouterProtocol) {
         self.view = view
     }
+    
+    
     public func getUsers(){
         guard let url = URL(string: "https://rickandmortyapi.com/api/character/2") else {return}
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in

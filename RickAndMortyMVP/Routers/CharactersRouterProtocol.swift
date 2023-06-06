@@ -8,5 +8,5 @@
 import Foundation //Навигация: Используются для навигации между экранами или модулями
 
 protocol CharactersRouterProtocol{
-    
+    func navigateToDetails()
 }

@@ -1,16 +1,14 @@
 //
-//  CharactersViewModel.swift
+//  CharacterRouter.swift
 //  RickAndMortyMVP
 //
-//  Created by Ayan on 06.06.2023.
+//  Created by Ayan on 07.06.2023.
 //
-
-//Исползуется для передачи данных между презентером и view
 
 import Foundation
 import UIKit
 
-class CharactersViewModel: UIViewController,CharactersViewProtocol {
+class CharactersRouter: CharactersRouterProtocol {
     weak var viewController: CharactersViewController?
 
     init(viewController: CharactersViewController) {

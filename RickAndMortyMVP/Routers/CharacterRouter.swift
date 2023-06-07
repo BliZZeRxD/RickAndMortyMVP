@@ -16,8 +16,14 @@ class CharactersRouter: CharactersRouterProtocol {
     }
 
     func navigateToDetails() {
-        let storyboard = UIStoryboard(name: "CharacterDetailsViewController", bundle: nil)
-        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "CharacterDetailsViewController") as? CharacterDetailsViewController else {
+        let storyboard = UIStoryboard(
+            name: "CharacterDetailsViewController",
+            bundle: nil
+        )
+        guard let nextViewController = storyboard.instantiateViewController(
+            withIdentifier: "CharacterDetailsViewController"
+        )
+                as? CharacterDetailsViewController else {
             return
         }
         viewController?.navigationController?.pushViewController(nextViewController, animated: true)

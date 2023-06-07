@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol UserPresenterProtocol{
-    
+protocol UserPresenterProtocol {
+    func getUsers()
 }

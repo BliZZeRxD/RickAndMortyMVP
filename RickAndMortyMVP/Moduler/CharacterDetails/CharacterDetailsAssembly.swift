@@ -8,13 +8,14 @@
 import Foundation
 import UIKit
 
-struct CharacterDetailsAssembly{
-    
-    static func createModule() -> UIViewController{
-        
+struct CharacterDetailsAssembly {
+
+    static func createModule() -> UIViewController {
+
         let storyboard = UIStoryboard(name: "CharacterDetailsViewController", bundle: .main)
-        
-        guard let viewController = storyboard.instantiateInitialViewController() as? CharactersViewController else {
+
+        guard let viewController = storyboard.instantiateInitialViewController()
+                as? CharacterDetailsViewController else {
             fatalError()
         }
         return viewController

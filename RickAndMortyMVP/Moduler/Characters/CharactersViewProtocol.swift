@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol CharactersViewProtocol: UIViewController, CharactersRouterProtocol{
+protocol CharactersViewProtocol: UIViewController, CharactersRouterProtocol {
 //    func presentUsers(users:Character)
 //    func presentAlert(title: String, message: String)
 }

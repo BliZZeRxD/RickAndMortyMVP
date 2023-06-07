@@ -7,6 +7,5 @@
 
 import Foundation
 
-protocol UserRouterProtocol{
-    
+protocol UserRouterProtocol {
 }

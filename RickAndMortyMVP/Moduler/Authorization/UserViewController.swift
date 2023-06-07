@@ -6,26 +6,25 @@
 //
 
 import UIKit
-
 // Отвечает за отображение пользовательского интерфейса и обработку пользовательских взаимодействий.
 
 class UserViewController: UIViewController, UserViewProtocol {
-        
+
     @IBOutlet weak var idTextField: UITextField!
-    
+
+    var resultText = ""
     var presenter: UserPresenterProtocol!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
-    
-    func navigateToDetails() {
-        
-    }
-    
+
     @IBAction func nextScreenNavigation(_ sender: Any) {
-        
+        if let enteredText = idTextField.text, !enteredText.isEmpty {
+            resultText = enteredText
+        } else {
+            printContent("Enter Your ID!")
+        }
     }
-    
 }

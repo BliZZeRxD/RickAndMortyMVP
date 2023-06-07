@@ -9,6 +9,5 @@ import Foundation
 
 // Определяет методы, которые должен реализовать презентер.
 
-protocol CharactersPresenterProtocol{
-    func getUsers()
+protocol CharactersPresenterProtocol {
 }

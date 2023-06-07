@@ -1,5 +1,5 @@
 //
-//  CharactersViewController.swift
+//  UserViewController.swift
 //  RickAndMortyMVP
 //
 //  Created by Ayan on 06.06.2023.
@@ -9,14 +9,22 @@ import UIKit
 
 // Отвечает за отображение пользовательского интерфейса и обработку пользовательских взаимодействий.
 
-class CharactersViewController: UIViewController, CharactersViewProtocol {
-   
+class UserViewController: UIViewController, UserViewProtocol {
+        
     @IBOutlet weak var idTextField: UITextField!
     
-    var presenter: CharactersPresenterProtocol!
+    var presenter: UserPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    func navigateToDetails() {
+        
+    }
+    
+    @IBAction func nextScreenNavigation(_ sender: Any) {
         
     }
     

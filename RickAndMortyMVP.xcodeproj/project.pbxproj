@@ -30,6 +30,11 @@
 		85E6B9632A30784400F3843A /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B9622A30784400F3843A /* UserPresenter.swift */; };
 		85E6B9652A30790700F3843A /* UserViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B9642A30790700F3843A /* UserViewProtocol.swift */; };
 		85E6B9672A30795100F3843A /* UserRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B9662A30795100F3843A /* UserRouterProtocol.swift */; };
+		85E6B96C2A31478900F3843A /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B96B2A31478900F3843A /* CharacterPresenter.swift */; };
+		85E6B96E2A31479800F3843A /* CharacterPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B96D2A31479800F3843A /* CharacterPresenterProtocol.swift */; };
+		85E6B9702A3147C300F3843A /* CharacterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B96F2A3147C300F3843A /* CharacterViewProtocol.swift */; };
+		85E6B9722A3147D100F3843A /* CharacterRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B9712A3147D100F3843A /* CharacterRouterProtocol.swift */; };
+		85E6B9742A31D28000F3843A /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6B9732A31D28000F3843A /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,11 @@
 		85E6B9622A30784400F3843A /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		85E6B9642A30790700F3843A /* UserViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewProtocol.swift; sourceTree = "<group>"; };
 		85E6B9662A30795100F3843A /* UserRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouterProtocol.swift; sourceTree = "<group>"; };
+		85E6B96B2A31478900F3843A /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		85E6B96D2A31479800F3843A /* CharacterPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenterProtocol.swift; sourceTree = "<group>"; };
+		85E6B96F2A3147C300F3843A /* CharacterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewProtocol.swift; sourceTree = "<group>"; };
+		85E6B9712A3147D100F3843A /* CharacterRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRouterProtocol.swift; sourceTree = "<group>"; };
+		85E6B9732A31D28000F3843A /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		BB6909BADE4DA7912DE35979 /* Pods_RickAndMortyMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAndMortyMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4135068810E0C9EE009952A /* Pods-RickAndMortyMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMVP.debug.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMVP/Pods-RickAndMortyMVP.debug.xcconfig"; sourceTree = "<group>"; };
 		E84FE26F20A0C9D0ED5953DE /* Pods-RickAndMortyMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyMVP.release.xcconfig"; path = "Target Support Files/Pods-RickAndMortyMVP/Pods-RickAndMortyMVP.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +166,7 @@
 				85E6B9602A30783C00F3843A /* UserPrenterProtocol.swift */,
 				85E6B9622A30784400F3843A /* UserPresenter.swift */,
 				85E6B9642A30790700F3843A /* UserViewProtocol.swift */,
+				85E6B9732A31D28000F3843A /* UserView.swift */,
 				85E6B9662A30795100F3843A /* UserRouterProtocol.swift */,
 			);
 			path = Authorization;
@@ -167,6 +178,10 @@
 				85E6B95E2A30763300F3843A /* CharacterDetailsAssembly.swift */,
 				85E6B9582A2FB69B00F3843A /* CharacterDetailsViewController.swift */,
 				85E6B95A2A2FB6A000F3843A /* CharacterDetailsViewController.storyboard */,
+				85E6B96D2A31479800F3843A /* CharacterPresenterProtocol.swift */,
+				85E6B96B2A31478900F3843A /* CharacterPresenter.swift */,
+				85E6B96F2A3147C300F3843A /* CharacterViewProtocol.swift */,
+				85E6B9712A3147D100F3843A /* CharacterRouterProtocol.swift */,
 			);
 			path = CharacterDetails;
 			sourceTree = "<group>";
@@ -321,13 +336,18 @@
 				85E6B9612A30783C00F3843A /* UserPrenterProtocol.swift in Sources */,
 				85E6B9502A2F80AB00F3843A /* Character.swift in Sources */,
 				858F37AB2A2E770300A6CE14 /* CharactersPresenter.swift in Sources */,
+				85E6B96E2A31479800F3843A /* CharacterPresenterProtocol.swift in Sources */,
+				85E6B9722A3147D100F3843A /* CharacterRouterProtocol.swift in Sources */,
 				85E6B95F2A30763300F3843A /* CharacterDetailsAssembly.swift in Sources */,
 				858F37A92A2E76E200A6CE14 /* CharactersPresenterProtocol.swift in Sources */,
+				85E6B9742A31D28000F3843A /* UserView.swift in Sources */,
 				858F37B52A2E776100A6CE14 /* CharactersViewController.swift in Sources */,
 				858F37AF2A2E772F00A6CE14 /* CharactersViewProtocol.swift in Sources */,
 				858F37AD2A2E771800A6CE14 /* CharactersRouterProtocol.swift in Sources */,
+				85E6B96C2A31478900F3843A /* CharacterPresenter.swift in Sources */,
 				858F37932A2E75DC00A6CE14 /* SceneDelegate.swift in Sources */,
 				85E6B9652A30790700F3843A /* UserViewProtocol.swift in Sources */,
+				85E6B9702A3147C300F3843A /* CharacterViewProtocol.swift in Sources */,
 				858F37A72A2E76C200A6CE14 /* UserAssembly.swift in Sources */,
 				858F37B22A2E775100A6CE14 /* UserViewController.swift in Sources */,
 				85E6B9672A30795100F3843A /* UserRouterProtocol.swift in Sources */,

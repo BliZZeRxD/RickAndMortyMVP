@@ -12,19 +12,19 @@ class UserViewController: UIViewController, UserViewProtocol {
 
     @IBOutlet weak var idTextField: UITextField!
 
-    var resultText = ""
     var presenter: UserPresenterProtocol!
-
+    var userID: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userID = idTextField.text ?? ""
     }
 
     @IBAction func nextScreenNavigation(_ sender: Any) {
-        if let enteredText = idTextField.text, !enteredText.isEmpty {
-            resultText = enteredText
-        } else {
-            printContent("Enter Your ID!")
-        }
+        presenter.nextButtonTapped(userID: userID)
+    }
+    func goToNextScreen(userID: String) {
+        let userDetailsViewController = CharacterDetailsAssembly.createModule(userID: userID)
+        userDetailsViewController.modalPresentationStyle = .fullScreen
+        present(userDetailsViewController, animated: true, completion: nil)
     }
 }

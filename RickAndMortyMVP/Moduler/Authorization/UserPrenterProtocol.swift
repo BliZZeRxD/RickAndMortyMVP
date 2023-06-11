@@ -8,5 +8,5 @@
 import Foundation
 
 protocol UserPresenterProtocol {
-    func getUsers()
+    func nextButtonTapped(userID: String)
 }

@@ -8,5 +8,5 @@
 import UIKit
 
 protocol CharacterViewProtocol: UIViewController, CharacterRouterProtocol {
-
+    func updateView(viewModel: CharacterViewModel)
 }

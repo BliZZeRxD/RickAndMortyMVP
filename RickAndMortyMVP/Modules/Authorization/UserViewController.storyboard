@@ -27,10 +27,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Vbc-R8-DUK">
-                                <rect key="frame" x="46" y="329" width="301" height="73.333333333333314"/>
+                                <rect key="frame" x="20" y="329" width="353" height="73.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your ID, or something, I don't care" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ib-oy-CZj">
-                                        <rect key="frame" x="0.0" y="0.0" width="301" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.333333333333332" id="MXS-p9-RzE"/>
                                         </constraints>
@@ -39,7 +39,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Here, dummy" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-AC-FOQ">
-                                        <rect key="frame" x="0.0" y="39.333333333333314" width="301" height="34"/>
+                                        <rect key="frame" x="0.0" y="39.333333333333314" width="353" height="34"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Ead-HV-1vd"/>
@@ -67,9 +67,9 @@
                             <constraint firstAttribute="bottom" secondItem="SdT-Rj-obW" secondAttribute="bottom" id="AjY-uJ-69e"/>
                             <constraint firstItem="SdT-Rj-obW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="HzL-61-SKx"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E9w-EF-QEd" secondAttribute="trailing" constant="28" id="LDi-Tm-NRS"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vbc-R8-DUK" secondAttribute="trailing" constant="46" id="NJc-Sx-wjt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vbc-R8-DUK" secondAttribute="trailing" constant="20" id="NJc-Sx-wjt"/>
                             <constraint firstItem="E9w-EF-QEd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="Sc5-5t-BfA"/>
-                            <constraint firstItem="Vbc-R8-DUK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="46" id="ScD-WT-BYg"/>
+                            <constraint firstItem="Vbc-R8-DUK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ScD-WT-BYg"/>
                             <constraint firstItem="SdT-Rj-obW" firstAttribute="top" secondItem="Vbc-R8-DUK" secondAttribute="bottom" constant="40" id="bBT-Tj-7US"/>
                             <constraint firstItem="SdT-Rj-obW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="e9G-HD-Wn9"/>
                             <constraint firstItem="Vbc-R8-DUK" firstAttribute="top" secondItem="E9w-EF-QEd" secondAttribute="bottom" constant="55" id="g0N-zl-Thh"/>

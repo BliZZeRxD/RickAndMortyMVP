@@ -15,6 +15,11 @@
 		852208452A3CA4B90084C25B /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852208442A3CA4B90084C25B /* TabBarPresenter.swift */; };
 		852208472A3CA5020084C25B /* TabBarPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852208462A3CA5020084C25B /* TabBarPresenterProtocol.swift */; };
 		852208492A3CA60F0084C25B /* TabBarViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852208482A3CA60F0084C25B /* TabBarViewProtocol.swift */; };
+		8522084C2A3CA9400084C25B /* EpisodesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8522084B2A3CA9400084C25B /* EpisodesAssembly.swift */; };
+		8522084E2A3CA94D0084C25B /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8522084D2A3CA94D0084C25B /* EpisodesViewController.swift */; };
+		852208502A3CA9580084C25B /* EpisodesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8522084F2A3CA9580084C25B /* EpisodesViewProtocol.swift */; };
+		852208522A3CA9620084C25B /* EpisodesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852208512A3CA9620084C25B /* EpisodesPresenter.swift */; };
+		852208542A3CA96D0084C25B /* EpisodesPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852208532A3CA96D0084C25B /* EpisodesPresenterProtocol.swift */; };
 		858F37912A2E75DC00A6CE14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F37902A2E75DC00A6CE14 /* AppDelegate.swift */; };
 		858F37932A2E75DC00A6CE14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F37922A2E75DC00A6CE14 /* SceneDelegate.swift */; };
 		858F37952A2E75DC00A6CE14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F37942A2E75DC00A6CE14 /* ViewController.swift */; };
@@ -51,6 +56,11 @@
 		852208442A3CA4B90084C25B /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		852208462A3CA5020084C25B /* TabBarPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenterProtocol.swift; sourceTree = "<group>"; };
 		852208482A3CA60F0084C25B /* TabBarViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewProtocol.swift; sourceTree = "<group>"; };
+		8522084B2A3CA9400084C25B /* EpisodesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesAssembly.swift; sourceTree = "<group>"; };
+		8522084D2A3CA94D0084C25B /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		8522084F2A3CA9580084C25B /* EpisodesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewProtocol.swift; sourceTree = "<group>"; };
+		852208512A3CA9620084C25B /* EpisodesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesPresenter.swift; sourceTree = "<group>"; };
+		852208532A3CA96D0084C25B /* EpisodesPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesPresenterProtocol.swift; sourceTree = "<group>"; };
 		858F378D2A2E75DC00A6CE14 /* RickAndMortyMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858F37902A2E75DC00A6CE14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		858F37922A2E75DC00A6CE14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +138,11 @@
 		8522084A2A3CA76A0084C25B /* Episodes */ = {
 			isa = PBXGroup;
 			children = (
+				8522084B2A3CA9400084C25B /* EpisodesAssembly.swift */,
+				8522084D2A3CA94D0084C25B /* EpisodesViewController.swift */,
+				8522084F2A3CA9580084C25B /* EpisodesViewProtocol.swift */,
+				852208512A3CA9620084C25B /* EpisodesPresenter.swift */,
+				852208532A3CA96D0084C25B /* EpisodesPresenterProtocol.swift */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -390,14 +405,19 @@
 				8522081B2A3611D60084C25B /* CharacterDetailViewController.swift in Sources */,
 				858F37B52A2E776100A6CE14 /* CharactersViewController.swift in Sources */,
 				852208452A3CA4B90084C25B /* TabBarPresenter.swift in Sources */,
+				852208542A3CA96D0084C25B /* EpisodesPresenterProtocol.swift in Sources */,
 				858F37AF2A2E772F00A6CE14 /* CharactersViewProtocol.swift in Sources */,
 				858F37AD2A2E771800A6CE14 /* CharactersRouterProtocol.swift in Sources */,
 				85E6B96C2A31478900F3843A /* CharacterPresenter.swift in Sources */,
 				858F37932A2E75DC00A6CE14 /* SceneDelegate.swift in Sources */,
 				85E6B9652A30790700F3843A /* UserViewProtocol.swift in Sources */,
+				8522084C2A3CA9400084C25B /* EpisodesAssembly.swift in Sources */,
 				85E6B9702A3147C300F3843A /* CharacterViewProtocol.swift in Sources */,
 				858F37A72A2E76C200A6CE14 /* UserAssembly.swift in Sources */,
+				852208522A3CA9620084C25B /* EpisodesPresenter.swift in Sources */,
 				858F37B22A2E775100A6CE14 /* UserViewController.swift in Sources */,
+				8522084E2A3CA94D0084C25B /* EpisodesViewController.swift in Sources */,
+				852208502A3CA9580084C25B /* EpisodesViewProtocol.swift in Sources */,
 				85E6B9672A30795100F3843A /* UserRouterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

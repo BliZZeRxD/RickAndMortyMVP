@@ -9,9 +9,9 @@ import UIKit
 
 struct TabBarAssembly {
 
-    static func createModule() -> TabBarVC {
+    static func createModule(userID: String) -> TabBarVC {
         let view = TabBarVC()
-        let presenter: TabBarPresenterProtocol = TabBarPresenter() as TabBarPresenterProtocol
+        let presenter: TabBarPresenterProtocol = TabBarPresenter(resultText: userID) as TabBarPresenterProtocol
         view.presenter = presenter
         return view
     }

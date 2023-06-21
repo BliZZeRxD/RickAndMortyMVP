@@ -8,5 +8,15 @@
 import UIKit
 
 class TabBarPresenter: TabBarPresenterProtocol {
+    let resultText: String
+    var userID: String = ""
+
+    init(resultText: String) {
+        self.resultText = resultText
+    }
+    
+    func setValueForID() {
+        userID = resultText
+    }
     
 }

@@ -80,7 +80,7 @@ class CharacterDetailViewController: UIViewController, CharacterViewProtocol {
         button.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.width.equalTo(250)
-            make.bottom.equalToSuperview().inset(50)
+            make.bottom.equalToSuperview().inset(100)
             make.height.equalTo(40)
         }
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)

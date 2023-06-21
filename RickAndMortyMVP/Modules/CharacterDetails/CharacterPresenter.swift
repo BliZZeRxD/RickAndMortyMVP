@@ -25,7 +25,6 @@ class CharacterPresenter: CharacterPresenterProtocol {
     public func getUsers() {
         guard let url = URL(string:
         "https://rickandmortyapi.com/api/character/\(resultText)") else {return}
-        print(url)
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let data = data, error == nil else {
                 return

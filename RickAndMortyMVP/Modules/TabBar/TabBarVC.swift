@@ -6,10 +6,24 @@
 //
 
 import UIKit
+import SnapKit
 
-class TabBarVC: UIViewController, TabBarViewProtocol {
-    var presenter: TabBarPresenterProtocol!
+class TabBarVC: UITabBarController, TabBarViewProtocol {
     
-    let homeVC = CharacterDetailsAssembly()
-    let episodesVC = UIViewController()
+    var presenter: TabBarPresenterProtocol!
+    let homeVC = UINavigationController(rootViewController: CharacterDetailsAssembly.createModule(userID: "42"))
+    let episodesVC = UINavigationController(rootViewController: EpisodesAssembly.createModule())
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        generateTabBar()
+        viewControllers = [homeVC, episodesVC]
+    }
+    
+    private func generateTabBar() {
+        let item1 = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        let item2 = UITabBarItem(tabBarSystemItem: .downloads, tag: 1)
+        homeVC.tabBarItem = item1
+        episodesVC.tabBarItem = item2
+    }
 }

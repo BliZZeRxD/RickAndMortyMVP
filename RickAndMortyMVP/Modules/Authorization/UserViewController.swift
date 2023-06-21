@@ -23,7 +23,7 @@ class UserViewController: UIViewController, UserViewProtocol {
         presenter.nextButtonTapped(userID: userID)
     }
     func goToNextScreen(userID: String) {
-        let userDetailsViewController = CharacterDetailsAssembly.createModule(userID: userID)
+        let userDetailsViewController = TabBarAssembly.createModule(userID: userID)
         userDetailsViewController.modalPresentationStyle = .fullScreen
         present(userDetailsViewController, animated: true, completion: nil)
     }
